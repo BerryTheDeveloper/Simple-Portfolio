@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import ArrowUpRightIcon from './assets/ArrowUpRightIcon';
 import FakePersonIcon from './assets/FakePersonIcon';
 import LightIcon from './assets/LightIcon';
+import FacebookIcon from './assets/FacebookIcon';
+import LinkedinIcon from './assets/LinkedinIcon';
+import GithubIcon from './assets/GithubIcon';
+import XIcon from './assets/XIcon';
 
 function App() {
 	return (
@@ -41,12 +45,56 @@ function App() {
 				<Technology />
 			</section>
 			<DividerLine />
-			<section className='wrapper-row'>
+			<section className='wrapper-col'>
 				<Title>Contacts</Title>
+				<div className='flex justify-center gap-4 w-full'>
+					{contactsLinks.map((link, index) => (
+						<HrefElement href={link.link} key={index}>
+							{link.icon()}
+						</HrefElement>
+					))}
+				</div>
 			</section>
 		</div>
 	);
 }
+
+const contactsLinks = [
+	{
+		link: 'https://www.facebook.com',
+		icon: () => <FacebookIcon />,
+	},
+	{
+		link: '',
+		icon: () => <GithubIcon />,
+	},
+	{
+		link: '',
+		icon: () => <LinkedinIcon />,
+	},
+	{
+		link: '',
+		icon: () => <XIcon />,
+	},
+];
+
+contactsLinks.propTypes = {
+	link: PropTypes.string.isRequired,
+	icon: PropTypes.element.isRequired,
+};
+
+function HrefElement({ href, children }) {
+	return (
+		<a href={href} target='_blank'>
+			{children}
+		</a>
+	);
+}
+
+HrefElement.propTypes = {
+	href: PropTypes.string.isRequired,
+	children: PropTypes.element.isRequired,
+};
 
 const experience = [
 	{
@@ -72,19 +120,19 @@ const experience = [
 	},
 ];
 
-function Technology() {
-	return <div>Chips</div>;
-}
-
 experience.propTypes = {
 	position: PropTypes.string.isRequired,
 	company: PropTypes.element.isRequired,
 	date: PropTypes.string.isRequired,
 };
 
+function Technology() {
+	return <div>Chips</div>;
+}
+
 function ExperienceSummary() {
 	return (
-		<div className='flex flex-col mt-4 gap-1'>
+		<div className='flex flex-col'>
 			{experience.map((exp, index) => (
 				<Fragment key={index}>
 					<p className='text-lg even:mt-4'>{exp.position}</p>

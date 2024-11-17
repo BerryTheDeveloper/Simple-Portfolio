@@ -11,5 +11,5 @@ body {
 }
 
 .wrapper-col {
-	@apply flex flex-col flex-nowrap items-start;
+	@apply flex flex-col flex-nowrap items-start gap-4;
 }
