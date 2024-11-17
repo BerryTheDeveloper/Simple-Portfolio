@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #1f1d1d;
+}
+
+.wrapper-row {
+	@apply flex flex-row flex-nowrap justify-between items-center;
+}
+
+.wrapper-col {
+	@apply flex flex-col flex-nowrap items-start;
+}
