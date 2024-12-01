@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        'inner-custom': 'inset 0 -4px 0 0',
+        'inner-custom': 'inset 0 -4px 0 0, inset 0 -4px .5rem 0',
       },
       borderColor: {
         'light-black': '#343434'
