@@ -17,8 +17,8 @@ export default function Introduction() {
                     {' '} web and mobile applications. Currently working for Right{' '}
                     <span className='text-red-500'>Information</span>.
                     <span className='mt-4 flex gap-2 justify-center'>
-						Resume
-						<ArrowUpRightIcon/>
+						{/*Resume*/}
+						{/*<ArrowUpRightIcon/>*/}
 					</span>
                 </p>
             </>

@@ -7,7 +7,7 @@ export default function Navbar() {
         <SectionWrapper as={'nav'} wrapperPosition='row'>
             <>
                 <Title>Bartłomiej Popiołek</Title>
-                <LightIcon/>
+                {/*<LightIcon/>*/}
             </>
         </SectionWrapper>
     )

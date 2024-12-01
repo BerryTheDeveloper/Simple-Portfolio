@@ -8,7 +8,7 @@ const experience = [
         comapny: () => (
             <p className='flex gap-2'>
                 Right <span className='text-red-500'>Information</span>
-                <ArrowUpRightIcon />
+                {/*<ArrowUpRightIcon />*/}
             </p>
         ),
         date: '2021 - Present',
@@ -19,7 +19,7 @@ const experience = [
             <p className='flex gap-2'>
                 Stowarzyszenie{' '}
                 <span className='text-blue-500'>Coders Crew</span>
-                <ArrowUpRightIcon />
+                {/*<ArrowUpRightIcon />*/}
             </p>
         ),
         date: '2020 - 2021',
