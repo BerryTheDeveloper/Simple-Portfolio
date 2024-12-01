@@ -1,6 +1,6 @@
 import SectionWrapper from "../components/SectionWrapper.jsx";
 // import FakePersonIcon from "../assets/FakePersonIcon.tsx";
-import ArrowUpRightIcon from "../assets/ArrowUpRightIcon.tsx";
+// import ArrowUpRightIcon from "../assets/ArrowUpRightIcon.tsx";
 import PropTypes from "prop-types";
 
 export default function Introduction() {

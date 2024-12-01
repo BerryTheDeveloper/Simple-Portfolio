@@ -1,4 +1,4 @@
-import ArrowUpRightIcon from "../assets/ArrowUpRightIcon.tsx";
+// import ArrowUpRightIcon from "../assets/ArrowUpRightIcon.tsx";
 import PropTypes from "prop-types";
 import {Fragment} from "react";
 
