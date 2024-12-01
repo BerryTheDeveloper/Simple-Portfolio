@@ -3,13 +3,50 @@
 @tailwind utilities;
 
 body {
-	background-color: #1f1d1d;
+    background-color: #1f1d1d;
 }
 
 .wrapper-row {
-	@apply flex flex-row flex-nowrap justify-between items-center;
+    @apply flex flex-row flex-nowrap justify-between items-center;
 }
 
 .wrapper-col {
-	@apply flex flex-col flex-nowrap items-start gap-4;
+    @apply flex flex-col flex-nowrap items-start gap-4;
+}
+
+
+.line-left-animation {
+    width: 0;
+    animation: lineAnimation 5s backwards ease-out;
+}
+
+.line-right-animation {
+    width: 0;
+	animation: lineAnimation 5s forwards ease-out;
+}
+
+.animation-delay-3 {
+    animation-delay: 3s;
+}
+
+.animation-delay-6 {
+    animation-delay: 6s;
+}
+
+.animation-delay-9 {
+    animation-delay: 9s;
+}
+
+@keyframes lineAnimation {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
