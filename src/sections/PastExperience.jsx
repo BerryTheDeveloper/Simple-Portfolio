@@ -6,7 +6,7 @@ export default function PastExperience() {
     return (
         <SectionWrapper wrapperPosition={'col'}>
             <>
-                <Title animationDelay={'3'}>Past Experience</Title>
+                <Title animationDelay={1}>Past Experience</Title>
                 <ExperienceSummary/>
             </>
         </SectionWrapper>

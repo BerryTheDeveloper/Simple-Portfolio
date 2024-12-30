@@ -38,7 +38,7 @@ export default function Contacts() {
 	return (
 		<SectionWrapper wrapperPosition={'col'}>
 			<>
-				<Title animationDelay={'9'}>Contacts</Title>
+				<Title animationDelay={3}>Contacts</Title>
 				<div className='flex justify-center gap-4 w-full'>
 					{contactsLinks.map((link, index) => (
 						<HrefElement href={link.link} key={index}>

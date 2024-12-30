@@ -14,36 +14,38 @@ body {
     @apply flex flex-col flex-nowrap items-start gap-4;
 }
 
+.fast-line-left-animation {
+    animation: lineAnimation 0.5s backwards ease-out;
+}
 
 .line-left-animation {
-    width: 0;
     animation: lineAnimation 2s backwards ease-out;
 }
 
 .line-right-animation {
     width: 0;
-	animation: lineAnimation 2s forwards ease-out;
+    animation: lineAnimation 2s forwards ease-out;
 }
 
-.animation-delay-3 {
+.animation-delay-04 {
+    animation-delay: 0.4s;
+}
+
+.animation-delay-1 {
     animation-delay: 1s;
 }
 
-.animation-delay-6 {
+.animation-delay-2 {
     animation-delay: 2s;
 }
 
-.animation-delay-9 {
+.animation-delay-3 {
     animation-delay: 3s;
 }
 
 @keyframes lineAnimation {
     0% {
         width: 0;
-    }
-
-    50% {
-        width: 50%;
     }
 
     100% {

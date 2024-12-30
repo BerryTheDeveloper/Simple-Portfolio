@@ -7,7 +7,7 @@ export default function Skills() {
     return (
         <SectionWrapper wrapperPosition={'col'}>
             <>
-                <Title animationDelay={'6'}>Skills</Title>
+                <Title animationDelay={2}>Skills</Title>
                 <div className={'flex flex-row flex-wrap gap-2'}>
                     <>
                         {skills.map((skill, index) => (
