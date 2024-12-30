@@ -17,24 +17,24 @@ body {
 
 .line-left-animation {
     width: 0;
-    animation: lineAnimation 5s backwards ease-out;
+    animation: lineAnimation 2s backwards ease-out;
 }
 
 .line-right-animation {
     width: 0;
-	animation: lineAnimation 5s forwards ease-out;
+	animation: lineAnimation 2s forwards ease-out;
 }
 
 .animation-delay-3 {
-    animation-delay: 3s;
+    animation-delay: 1s;
 }
 
 .animation-delay-6 {
-    animation-delay: 6s;
+    animation-delay: 2s;
 }
 
 .animation-delay-9 {
-    animation-delay: 9s;
+    animation-delay: 3s;
 }
 
 @keyframes lineAnimation {
